@@ -1,0 +1,68 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: agentshop
+
+  # H2 Database
+  datasource:
+    url: jdbc:h2:file:./data/agentshop;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  jpa:
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.H2Dialect
+
+  sql:
+    init:
+      mode: always
+
+  # Spring AI — OpenAI-compatible (configured for Google Gemini API)
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY:}
+      base-url: ${OPENAI_BASE_URL:https://generativelanguage.googleapis.com/v1beta/openai}
+      chat:
+        options:
+          model: ${AI_MODEL:gemini-1.5-flash}
+          temperature: 0.7
+          max-tokens: 2048
+
+# Razorpay Configuration
+razorpay:
+  key-id: ${RAZORPAY_KEY_ID:rzp_test_placeholder}
+  key-secret: ${RAZORPAY_KEY_SECRET:placeholder_secret}
+  webhook-secret: ${RAZORPAY_WEBHOOK_SECRET:webhook_secret}
+
+# App Configuration
+agentshop:
+  max-order-amount: 50000000  # ₹500,000 in paise
+  max-discount-percent: 30    # Merchant-configured ceiling — no checkout can exceed this discount %
+  currency: INR
+  payment-link-expiry-minutes: 30
+
+# SpringDoc
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+
+logging:
+  level:
+    com.agentshop: DEBUG
+    org.springframework.ai: INFO

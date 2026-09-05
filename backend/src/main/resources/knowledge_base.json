@@ -1,0 +1,107 @@
+[
+  {
+    "id": "return-policy",
+    "title": "Return & Refund Policy",
+    "category": "returns",
+    "keywords": ["return", "refund", "money back", "exchange", "replace", "damaged", "defective", "wrong product"],
+    "content": "AgentShop offers a 7-day no-questions-asked return policy on all products. For defective or damaged items, we extend this to 15 days. To initiate a return, simply message our AI assistant with your Order ID. Refunds are processed within 3-5 business days back to your original payment method via Razorpay. Exchanges are available for size/color variants at no extra cost. Items must be returned in original packaging with all accessories."
+  },
+  {
+    "id": "shipping-info",
+    "title": "Shipping & Delivery",
+    "category": "shipping",
+    "keywords": ["shipping", "delivery", "ship", "deliver", "dispatch", "track", "tracking", "courier", "how long", "when will"],
+    "content": "Free shipping on all orders above ₹999 (use coupon FREESHIP). Standard delivery takes 3-5 business days across India. Express delivery (1-2 days) is available in metro cities for an additional ₹149. All orders are dispatched within 24 hours of payment confirmation via Razorpay. You will receive a tracking link via email and SMS once your order is shipped. Cash on Delivery is not available — we accept UPI, cards, net banking, and wallets via Razorpay."
+  },
+  {
+    "id": "payment-methods",
+    "title": "Payment Methods & Security",
+    "category": "payment",
+    "keywords": ["payment", "pay", "upi", "card", "credit", "debit", "net banking", "wallet", "emi", "razorpay", "secure", "safe"],
+    "content": "All payments are processed securely through Razorpay, India's leading payment gateway. We accept: UPI (Google Pay, PhonePe, Paytm), Credit/Debit Cards (Visa, Mastercard, RuPay), Net Banking (all major banks), Wallets (Paytm, Amazon Pay), and No-cost EMI on select products above ₹3,000. All transactions are PCI-DSS compliant and encrypted with 256-bit SSL. You will receive a Razorpay payment link during checkout."
+  },
+  {
+    "id": "warranty-electronics",
+    "title": "Warranty — Electronics",
+    "category": "warranty",
+    "keywords": ["warranty", "guarantee", "laptops", "smartphones", "tablets", "cameras", "repair", "service center"],
+    "content": "All electronics (Laptops, Smartphones, Tablets, Cameras) come with manufacturer warranty: Laptops — 1 year comprehensive, Smartphones — 1 year, Tablets — 1 year, Cameras — 2 years. Warranty covers manufacturing defects but not physical damage, water damage, or unauthorized modifications. For warranty claims, contact us with your Order ID and product serial number. We will coordinate with the manufacturer's authorized service center."
+  },
+  {
+    "id": "warranty-accessories",
+    "title": "Warranty — Headphones & Smartwatches",
+    "category": "warranty",
+    "keywords": ["warranty", "headphones", "earbuds", "smartwatch", "watch", "accessories", "guarantee"],
+    "content": "Headphones and Earbuds come with 6-month manufacturer warranty. Smartwatches come with 1-year manufacturer warranty. Warranty covers battery defects, connectivity issues, and manufacturing faults. Physical damage, water damage (unless rated IP68), and wear-and-tear are not covered. Extended warranty plans are available at checkout for an additional 10% of product price."
+  },
+  {
+    "id": "order-tracking",
+    "title": "Order Tracking",
+    "category": "orders",
+    "keywords": ["track", "tracking", "order status", "where is my order", "order update", "dispatched", "shipped"],
+    "content": "To track your order, use the 'Check Payment Status' feature in our AI chatbot by providing your Order ID. You can also check your order status on the Dashboard page. Once shipped, you will receive tracking updates via email. Typical delivery timeline: Order Confirmed → Dispatched (within 24h) → In Transit (1-3 days) → Out for Delivery → Delivered."
+  },
+  {
+    "id": "cancellation-policy",
+    "title": "Order Cancellation",
+    "category": "orders",
+    "keywords": ["cancel", "cancellation", "cancel order", "stop order", "don't want"],
+    "content": "Orders can be cancelled within 2 hours of placement for a full refund. After dispatch, cancellation is not possible — you can refuse delivery and the item will be returned automatically. Refund for cancelled orders is processed within 24 hours. Partial cancellation is available for multi-item orders. To cancel, provide your Order ID to our AI assistant."
+  },
+  {
+    "id": "coupons-offers",
+    "title": "Coupons & Promotional Offers",
+    "category": "offers",
+    "keywords": ["coupon", "discount", "offer", "deal", "sale", "promo", "code", "save", "cashback"],
+    "content": "AgentShop offers various promotional coupons: WELCOME10 (10% off first order), FLAT200 (₹200 off on ₹2000+), RAZORPAY15 (15% off, max ₹750), TECH500 (₹500 off electronics ₹5000+), AUDIO20 (20% off headphones), MEGA25 (25% off, max ₹1500), FREESHIP (free delivery on ₹999+), NEWUSER50 (₹50 off, no minimum). Say 'apply COUPONCODE' to our AI assistant to apply. Only one coupon can be used per order."
+  },
+  {
+    "id": "account-help",
+    "title": "Account & Login Help",
+    "category": "account",
+    "keywords": ["account", "login", "sign up", "register", "password", "forgot", "profile", "settings"],
+    "content": "To create an account, click 'Register' on the top navigation bar. You need an email and password to sign up. If you forgot your password, use the 'Forgot Password' option on the login page. Your account stores your order history, saved addresses, and preferences. You can shop as a guest, but creating an account allows our AI to personalize your experience and remember your preferences."
+  },
+  {
+    "id": "ai-shopping-assistant",
+    "title": "How Our AI Shopping Assistant Works",
+    "category": "features",
+    "keywords": ["ai", "bot", "assistant", "chatbot", "how does", "how to use", "help", "features", "what can"],
+    "content": "Our AI Shopping Assistant (ShopBot) is powered by advanced agentic AI with multi-agent orchestration. It can: search products by name/category/budget, show detailed product information, add items to your cart, apply coupons automatically, suggest upsells and cross-sells, initiate secure Razorpay checkout, track your orders, and answer questions about policies. The AI uses a Sales Agent for product discovery, a Support Agent for FAQs (powered by RAG), and a Checkout Agent for secure transactions."
+  },
+  {
+    "id": "bulk-orders",
+    "title": "Bulk & Corporate Orders",
+    "category": "orders",
+    "keywords": ["bulk", "corporate", "wholesale", "large order", "business", "b2b", "quantity"],
+    "content": "For bulk orders (10+ units), contact us for special corporate pricing. We offer volume discounts of 5-15% depending on quantity. Corporate accounts get dedicated support, priority shipping, and custom invoicing. GST invoices are available for all business purchases. Our AI agent can also process bulk orders — just specify the quantity when adding to cart."
+  },
+  {
+    "id": "product-authenticity",
+    "title": "Product Authenticity & Quality",
+    "category": "quality",
+    "keywords": ["authentic", "original", "genuine", "fake", "quality", "real", "brand", "certified"],
+    "content": "All products sold on AgentShop are 100% authentic and sourced directly from authorized distributors. Every product comes with a valid manufacturer warranty card and invoice. We do not sell refurbished or open-box items unless explicitly labeled. If you receive a product you suspect is not genuine, contact us within 48 hours for immediate replacement and investigation."
+  },
+  {
+    "id": "contact-support",
+    "title": "Contact & Support Hours",
+    "category": "support",
+    "keywords": ["contact", "support", "help", "customer service", "complaint", "issue", "problem", "email", "phone"],
+    "content": "Our AI Shopping Assistant is available 24/7 for instant support. For complex issues, our human support team is available Mon-Sat 9AM-9PM IST. Email: support@agentshop.com. All complaints are resolved within 48 hours. You can also raise issues through the chatbot — just describe your problem and our Support Agent will assist you."
+  },
+  {
+    "id": "razorpay-integration",
+    "title": "Razorpay Payment Integration",
+    "category": "payment",
+    "keywords": ["razorpay", "payment link", "checkout", "payment failed", "payment pending", "transaction"],
+    "content": "AgentShop uses Razorpay for all payment processing. During checkout, our AI agent generates a secure Razorpay payment link. Click the link to complete payment on Razorpay's secure page. Supported methods: UPI, Cards, Net Banking, Wallets, EMI. If payment fails, you can retry using the same link within 30 minutes. Payment confirmation is instant and your order status updates automatically on our Dashboard."
+  },
+  {
+    "id": "privacy-data",
+    "title": "Privacy & Data Protection",
+    "category": "privacy",
+    "keywords": ["privacy", "data", "personal information", "secure", "gdpr", "delete account", "data protection"],
+    "content": "AgentShop takes your privacy seriously. We collect only essential data: name, email, delivery address, and order history. Payment data is handled entirely by Razorpay and never stored on our servers. Your chat history with our AI assistant is stored securely and used only to improve your shopping experience. You can request data deletion at any time by contacting support. We comply with Indian data protection regulations."
+  }
+]

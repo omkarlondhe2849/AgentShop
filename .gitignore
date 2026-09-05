@@ -1,0 +1,40 @@
+# Environment variables & secrets
+.env
+.env.*
+*.env
+backend/.env
+frontend/.env
+!.env.example
+!backend/.env.example
+
+# Maven & Build artifacts
+target/
+**/target/
+apache-maven-*/
+backend/apache-maven-*/
+backend/maven.zip
+*.zip
+delomboked/
+**/delomboked/
+delombok*.py
+backend/lombok.jar
+
+# Node & Frontend
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+
+# Database files
+backend/data/
+data/
+*.mv.db
+*.trace.db
+
+# IDE & OS files
+.idea/
+*.iml
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
