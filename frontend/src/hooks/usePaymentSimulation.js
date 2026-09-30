@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
+import API_URL from '../config/api';
 
 export function usePaymentSimulation() {
   const [paymentStatus, setPaymentStatus] = useState(null); // 'success', 'failed', null
@@ -10,8 +11,8 @@ export function usePaymentSimulation() {
     setPaymentStatus(null);
     try {
       const endpoint = status === 'success' 
-        ? `http://localhost:8080/api/internal/orders/${orderId}/mark-paid`
-        : `http://localhost:8080/api/internal/orders/${orderId}/mark-failed`;
+        ? `${API_URL}/api/internal/orders/${orderId}/mark-paid`
+        : `${API_URL}/api/internal/orders/${orderId}/mark-failed`;
       
       const payload = status === 'success' ? { paymentId: `pay_sim_${Date.now()}` } : {};
       

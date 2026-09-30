@@ -1,5 +1,6 @@
 import { useState, useCallback, useEffect, useRef } from 'react';
 import axios from 'axios';
+import API_URL from '../config/api';
 
 export function useChat(sessionId) {
   const [messages, setMessages] = useState([]);
@@ -17,7 +18,7 @@ export function useChat(sessionId) {
   const fetchCart = useCallback(async () => {
     if (!sessionId) return;
     try {
-      const { data } = await axios.get(`http://localhost:8080/api/v1/cart/${sessionId}`);
+      const { data } = await axios.get(`${API_URL}/api/v1/cart/${sessionId}`);
       setCart({ items: data.items || [], totalAmount: data.totalPrice || 0 });
     } catch (error) {
       console.error('Failed to fetch cart:', error);
@@ -32,7 +33,7 @@ export function useChat(sessionId) {
     setIsLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:8080/api/chat', {
+      const response = await axios.post(`${API_URL}/api/chat`, {
         sessionId,
         message: text,
       });
@@ -83,7 +84,7 @@ export function useChat(sessionId) {
             customerEmail: addressData.email,
             deliveryAddress: addressData.address
         };
-        const response = await axios.post('http://localhost:8080/api/v1/checkout', payload);
+        const response = await axios.post(`${API_URL}/api/v1/checkout`, payload);
         
         if (response.data && response.data.message) {
             setMessages((prev) => [...prev, { id: Date.now() + 1, text: response.data.message, sender: 'bot' }]);

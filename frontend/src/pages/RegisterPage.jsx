@@ -3,6 +3,7 @@ import { useNavigate, Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { User, Mail, Lock, Zap } from 'lucide-react'
 import { toast } from 'sonner'
+import API_URL from '../config/api'
 
 export default function RegisterPage() {
   const navigate = useNavigate()
@@ -15,7 +16,7 @@ export default function RegisterPage() {
     e.preventDefault()
     setLoading(true)
     try {
-      const response = await fetch('http://localhost:8080/api/auth/register', {
+      const response = await fetch(`${API_URL}/api/auth/register`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)

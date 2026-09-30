@@ -84,8 +84,8 @@ npm install && npm run dev
 Razorpay keys and merchant limits are in `backend/src/main/resources/application.yml`:
 ```yaml
 razorpay:
-  key-id: rzp_test_YOUR_KEY_HERE
-  key-secret: YOUR_KEY_SECRET_HERE
+  key-id: rzp_test_TY1pnolzBLW2gj
+  key-secret: 5q0Jvb75Yw8IHeZwnM9w5pF3
 
 agentshop:
   max-order-amount: 50000000      # ₹500,000 ceiling

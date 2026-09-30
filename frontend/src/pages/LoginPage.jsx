@@ -3,6 +3,7 @@ import { useNavigate, Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { LogIn, Mail, Lock, Bot } from 'lucide-react'
 import { toast } from 'sonner'
+import API_URL from '../config/api'
 
 export default function LoginPage() {
   const navigate = useNavigate()
@@ -15,7 +16,7 @@ export default function LoginPage() {
     e.preventDefault()
     setLoading(true)
     try {
-      const response = await fetch('http://localhost:8080/api/auth/login', {
+      const response = await fetch(`${API_URL}/api/auth/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
